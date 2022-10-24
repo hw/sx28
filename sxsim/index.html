@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>SxSim</title>
+</head>
+
+<body>
+
+<h1 align=center>SxSim</h1>
+
+<hr>
+<h2 align=center>News Flash!</h2>
+15-AUG-1999:
+Version 1.11 has been released, and now supports the
+<a href="http://www.scenix.com/tools/">Scenix SASM assembler</a>.
+
+<hr>
+<h2 align=center>What is it?</h2>
+Would you like to start programming the new
+<a href="http://www.scenix.com/">Scenix</a>
+microcontroller?
+You can with Loren Blaney's SxSim, a screen-oriented simulator that's
+easy to use.
+<p>
+Features:
+<ul>
+<li>Supports interrupts; for an example run: SXSIM RTCCINT
+<li>Also simulates PIC 16C5x 
+<li>Step backwards
+<li>Stimulus files
+<li>Checkpoints
+<li>Watchdog timer
+<li>Mouse controls
+<li>Profiler
+<li>ASCII I/O instructions
+<li>Similar to <a href="http://www.parallaxinc.com/">Parallax</a>'s PSIM
+<li>Runs under DOS
+<li>Works with SPASM and MPASM
+<li>Source code included
+<li>Absolutely free
+</ul>
+
+<hr>
+<h2 align=center>Where Do I Get It?</h2>
+SxSim is available under the terms of the Free Software Foundation's
+<a href="http:/~eric/COPYING">General Public License, Version 2</a>.
+<p>
+Download
+<a href="sxsim111.zip">sxsim111.zip</a> ( 98K, Sunday, 15-Aug-1999 23:49:06 MDT)
+
+<p>
+SxSim is written in the <a href="http://www.idcomm.com/personal/lorenblaney/">XPL0 Programing Language</a>
+
+<hr>
+<h2 align=center><a name="rn">Release Notes for 1.11</a></h2>
+<p>
+<h3>New Features</h3>
+<ul>
+<li>Works with listing files produced by Scenix's SASM assembler.
+</ul>
+
+<hr>
+<h2 align=center>Release Notes for 1.10</h2>
+<p>
+<h3>New Features</h3>
+<ul>
+<li>Works with SX-Key listing files.
+<li>Multi-input Wakeups (MIWUs) are simulated.
+<li>Breakpoints can be specified in a stimulus file. Now a break point can
+    occur at a specified time in addition to a specified location.
+<li>Dots indicate the maximum depth of stack used.
+</ul>
+<h3>Bugs Fixed</h3>
+<ul>
+<li>Skips over PAGE & BANK instructions are handled correctly.
+<li>MPASM's DT, DW, DATA, etc. can now have multiple entries on a line.
+<li>External interrupts on port B are accurately simulated.
+<li>Page bits PA2:PA0 are automatically cleared by interrupts (and restored
+    when the interrupt returns).
+<li>Backing up into an interrupt routine restores FSR.
+<li>Prescaler is simulated more accurately: MCLR clears Prescaler, and
+    writing to RTCC clears it (if it's assigned to RTCC).
+<li>Macros in MPASM can have labels that look like hex numbers (like A04).
+<li>SPASM include files are loaded correctly.
+<li>Reset (Alt-F10) correctly sets stimulus file inputs when T=0.
+<li>DT commands in stimulus files no longer accumulate timing errors.
+</ul>
+<h3>Trivial Mods</h3>
+<ul>
+<li>Changed comments on help screen and updated documentation.
+<li>FUSEX bit 11 no longer specifies the number of pins.
+<li>"Not 12-bit opcodes" shows address of error.
+<li>MClr sets bit 7 of FSR. 
+</ul>
+
+<hr>
+<a href="../"> <img align="middle" src="/~eric/gifs/button/blue.up.gif"> Back to Eric's Scenix SX page </a>
+<br>
+<a href="/~eric/"> <img align="middle" src="http:/~eric/gifs/button/home.gif"> Back to Eric's home page </a>
+<p>
+Last updated August 15, 1999
+<p>
+Web page copyright 1998, 1999 Eric Smith
+<p>
+<a href="http://www.anybrowser.org/campaign/"><img border=0 src="/images/anybrowser3.gif" alt="Best Viewed With Any Browser" height=31 width=88></a>
+<a href="http://validator.w3.org/"><img border=0 src="/images/vh32.gif" alt="Valid HTML 3.2!" height=31 width=88></a>
+<a href="http://validator.w3.org/check/referer">check now</a>
+</body>
+</html>
